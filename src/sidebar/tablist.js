@@ -93,7 +93,13 @@ TabList.prototype = {
     if (!this._checkWindow(tab)) {
       return;
     }
-    this._shiftTabsIndexes(1, tab.index);
+
+    let curTab = this._getTabById(this._active);
+    if (curTab.pinned) {
+      tab.index = this._tabs.size;
+    } else {
+      this._shiftTabsIndexes(1, tab.index);
+    }
     this._create(tab);
   },
   async _onBrowserTabAttached(tabId, {newWindowId, newPosition}) {
@@ -189,7 +195,6 @@ TabList.prototype = {
     // Don't put preventDefault here or drag-and-drop won't work
     if (e.button === 0 && SideTab.isTabEvent(e)) {
       browser.tabs.update(SideTab.tabIdForEvent(e), {active: true});
-      this._props.search("");
       return;
     }
     // Prevent autoscrolling on middle click
