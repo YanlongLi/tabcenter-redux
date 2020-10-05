@@ -5,7 +5,7 @@ Your favorite vertical tabbed browsing add-on, now compatible with Firefox 57+.
 
 ## Usage
 Open the sidebar by clicking on the toolbar icon or with the following hotkeys:
-- `Ctrl`+`Shift`+`O` on Windows
+- `Ctrl`+`Shift`+`F` on Windows
 - `⌘`+`Shift`+`O` on macOS
 - `F1` on Linux
 
