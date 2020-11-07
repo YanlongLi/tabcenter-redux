@@ -1,9 +1,9 @@
 {
-  "name": "Tab Center Redux - customized",
+  "name": "Tab Center Redux",
   "description": "__MSG_extensionDescription__",
   "homepage_url": "https://github.com/YanlongLi/tabcenter-redux",
   "manifest_version": 2,
-  "version": "0.7.0.3",
+  "version": "0.7.0.4",
   "default_locale": "en",
   "sidebar_action": {
     "default_title": "__MSG_sidebarTitle__",
