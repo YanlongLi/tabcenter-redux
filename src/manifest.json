@@ -49,7 +49,7 @@
   "commands": {
     "_execute_sidebar_action": {
       "suggested_key": {
-          "default": "Ctrl+Shift+O",
+          "default": "Ctrl+Shift+F",
           "mac": "Command+Shift+O",
           "linux": "F1"
       }
